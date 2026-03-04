@@ -1,0 +1,41 @@
+{
+  "personal": {
+    "name": "Ian Sonota McFarland",
+    "title": "Full Stack / Backend Engineer",
+    "bio": "Hi, I'm Ian. This is what I do.",
+    "location": "City, Country",
+    "resumeUrl": "/resume.pdf",
+    "contact": {
+      "email": "hello@example.com",
+      "github": "https://github.com",
+      "linkedin": "https://linkedin.com"
+    }
+  },
+  "skills": [
+    {
+      "category": "Frontend",
+      "technologies": ["React", "Tailwind CSS", "TypeScript"]
+    },
+    {
+      "category": "Backend",
+      "technologies": ["Node.js", "Python", "SQL"]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Project Alpha",
+      "description": "A complex application that does amazing things.",
+      "techStack": ["React", "Node.js", "MongoDB"],
+      "demoUrl": "https://example.com/demo",
+      "repoUrl": "https://github.com/example/alpha"
+    },
+    {
+      "title": "Project Beta",
+      "description": "Another great project, showcasing my backend skills.",
+      "techStack": ["Python", "Django", "PostgreSQL"],
+      "demoUrl": "https://example.com/demo2",
+      "repoUrl": "https://github.com/example/beta",
+      "imageUrl": "https://via.placeholder.com/600x400"
+    }
+  ]
+}
