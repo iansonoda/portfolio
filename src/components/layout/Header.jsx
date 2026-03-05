@@ -6,7 +6,6 @@ const NAV_SECTIONS = [
   { id: "hero", label: "" },
   { id: "skills", label: "skills" },
   { id: "projects", label: "projects" },
-  { id: "contact", label: "contact" },
 ];
 
 function SunIcon() {
@@ -123,6 +122,12 @@ export default function Header() {
         {/* Navigation */}
         <div className="flex items-center gap-6">
           <nav className="flex items-center space-x-8 text-sm font-medium">
+            <Link
+              to="/about"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              About
+            </Link>
             <a
               className="text-muted-foreground hover:text-foreground transition-colors"
               href="/#skills"
@@ -130,20 +135,18 @@ export default function Header() {
             >
               Skills
             </a>
-            <a
+            <Link
+              to="/projects"
               className="text-muted-foreground hover:text-foreground transition-colors"
-              href="/#projects"
-              onClick={() => setIntersectingSection("projects")}
             >
               Projects
-            </a>
-            <a
+            </Link>
+            <Link
+              to="/socials"
               className="text-muted-foreground hover:text-foreground transition-colors"
-              href="/#contact"
-              onClick={() => setIntersectingSection("contact")}
             >
-              Contact
-            </a>
+              Socials
+            </Link>
           </nav>
 
           {/* Theme toggle */}

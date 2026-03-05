@@ -94,7 +94,7 @@ export default function Skills({ skills }) {
   if (!skills || skills.length === 0) return null;
 
   return (
-    <section id="skills" className="w-full bg-[#0f0f0f] py-12 md:py-12">
+    <section id="skills" className="w-full bg-[#0f0f0f] py-12 md:py-12 scroll-mt-20">
       <div className="max-w-[1200px] mx-auto px-6 mb-4">
         <h2 className="text-4xl font-bold tracking-tight text-white mb-8 border-b border-[#2a2a2a] pb-4">
           My Technologies

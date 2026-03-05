@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "./context/ThemeContext";
 import Home from "./pages/Home";
+import About from "./pages/About";
+import Socials from "./pages/Socials";
 import ProjectsPage from "./pages/Projects";
 import ProjectDetail from "./pages/ProjectDetail";
 import Header from "./components/layout/Header";
@@ -17,6 +19,8 @@ function App() {
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/socials" element={<Socials />} />
             <Route path="/projects" element={<ProjectsPage />} />
             <Route path="/projects/:slug" element={<ProjectDetail />} />
           </Routes>
