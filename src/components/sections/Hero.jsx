@@ -7,7 +7,7 @@ export default function Hero({ personal }) {
       className="hero-grid-bg w-full flex flex-col items-center justify-center text-center relative"
       style={{ minHeight: "calc(100vh - 3.5rem)" }}
     >
-      <div className="relative z-10 space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-700 -mt-16">
+      <div className="relative z-10 space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-700 -mt-24">
         {/* Location above name */}
         <p className="text-sm font-medium text-muted-foreground tracking-wide uppercase flex items-center justify-center gap-1.5">
           <span>📍</span>

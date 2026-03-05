@@ -46,7 +46,7 @@ const TECH_COLORS = {
   default:       "bg-zinc-100 text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400",
 };
 
-function TechBadge({ tech }) {
+export function TechBadge({ tech }) {
   const colorClass = TECH_COLORS[tech] ?? TECH_COLORS.default;
   return (
     <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] sm:text-xs font-medium whitespace-nowrap ${colorClass}`}>

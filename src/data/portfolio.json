@@ -31,7 +31,9 @@
       "description": "A complex application that does amazing things.",
       "techStack": ["React", "Node.js", "MongoDB"],
       "demoUrl": "https://example.com/demo",
-      "repoUrl": "https://github.com/example/alpha"
+      "repoUrl": "https://github.com/example/alpha",
+      "date": "October 13, 2025",
+      "content": "Welcome to Project Alpha. This is where I go into deep detail about the project in a blog style format.\n\nIt was built using the best tools available at the time and solved a major set of problems related to scale and real-time processing."
     },
     {
       "title": "Project Beta",
@@ -39,15 +41,19 @@
       "techStack": ["Python", "Django", "PostgreSQL"],
       "demoUrl": "https://example.com/demo2",
       "repoUrl": "https://github.com/example/beta",
-      "imageUrl": "https://via.placeholder.com/600x400"
+      "imageUrl": "https://via.placeholder.com/600x400",
+      "date": "March 01, 2025",
+      "content": "Welcome to Project Beta. This is where I go into deep detail about the project in a blog style format.\n\nWeighing the soul of incoming HTTP requests using proof-of-work to stop AI crawlers and other malicious bots."
     },
     {
       "title": "FreelanceHub",
-      "description": "A full-featured freelance management dashboard for tracking clients, projects, invoices, and time — all in one place. Built to replace a mess of spreadsheets with a clean, real-time SaaS experience.",
+      "description": "A full-featured freelance management dashboard for tracking clients, projects, invoices, and time — all in one place.",
       "techStack": ["Next.js", "TypeScript", "Supabase", "Prisma", "Tailwind CSS"],
       "demoUrl": "https://example.com/freelancehub",
       "repoUrl": "https://github.com/iansonoda/freelancehub",
-      "imageUrl": "/freelance-hub-preview.png"
+      "imageUrl": "/freelance-hub-preview.png",
+      "date": "August 16, 2024",
+      "content": "Welcome to the most meta project in my portfolio - the very website you're reading this on! Nyx is my personal portfolio and blog built with performance and simplicity in mind.\n\nA full-featured freelance management dashboard for tracking clients, projects, invoices, and time — all in one place. Built to replace a mess of spreadsheets with a clean, real-time SaaS experience."
     }
   ]
 }

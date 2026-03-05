@@ -116,7 +116,7 @@ export default function Skills({ skills }) {
                 <p className="text-sm font-semibold text-white truncate">
                   {skill.name}
                 </p>
-                <p className="text-xs text-[#888] truncate">
+                <p className="text-xs text-[#bbb] truncate">
                   {skill.description}
                 </p>
               </div>
