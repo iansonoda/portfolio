@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useLocation, Link } from "react-router-dom";
 import { useTheme } from "@/context/ThemeContext";
 
 const NAV_SECTIONS = [
@@ -27,11 +28,14 @@ function MoonIcon() {
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
-  const [activeSection, setActiveSection] = useState(() => {
-    const id = window.location.hash.replace("#", "") || "hero";
-    return NAV_SECTIONS.find((s) => s.id === id)?.label ?? "";
-  });
+  const location = useLocation();
+  const [intersectingSection, setIntersectingSection] = useState("");
   const { theme, toggle } = useTheme();
+
+  // Derived current label
+  const activeSection = location.pathname !== "/"
+    ? location.pathname.split("/").filter(Boolean)[0] || ""
+    : intersectingSection || (location.hash.replace("#", "") || "hero");
 
   // Scroll shadow
   useEffect(() => {
@@ -40,23 +44,11 @@ export default function Header() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Helper: resolve a hash → section label
-  const labelFromHash = (hash) => {
-    const id = hash.replace("#", "") || "hero";
-    return NAV_SECTIONS.find((s) => s.id === id)?.label ?? "";
-  };
-
-  // Update on hash change (covers navbar clicks)
+  // Intersection observer for section tracking on home page
   useEffect(() => {
-    const onHashChange = () => setActiveSection(labelFromHash(window.location.hash));
-    window.addEventListener("hashchange", onHashChange);
-    return () => window.removeEventListener("hashchange", onHashChange);
-  }, []);
+    if (location.pathname !== "/") return;
 
-  // Active section tracking via IntersectionObserver (covers manual scrolling)
-  useEffect(() => {
     const observers = [];
-
     NAV_SECTIONS.forEach(({ id, label }) => {
       const el = document.getElementById(id);
       if (!el) return;
@@ -64,7 +56,7 @@ export default function Header() {
       const observer = new IntersectionObserver(
         ([entry]) => {
           if (entry.isIntersecting) {
-            setActiveSection(label);
+            setIntersectingSection(label);
           }
         },
         { rootMargin: "-30% 0px -30% 0px", threshold: 0 }
@@ -74,7 +66,7 @@ export default function Header() {
     });
 
     return () => observers.forEach((o) => o.disconnect());
-  }, []);
+  }, [location.pathname]);
 
   return (
     <header
@@ -102,22 +94,22 @@ export default function Header() {
           <nav className="flex items-center space-x-8 text-sm font-medium">
             <a
               className="text-muted-foreground hover:text-foreground transition-colors"
-              href="#skills"
-              onClick={() => setActiveSection("skills")}
+              href="/#skills"
+              onClick={() => setIntersectingSection("skills")}
             >
               Skills
             </a>
             <a
               className="text-muted-foreground hover:text-foreground transition-colors"
-              href="#projects"
-              onClick={() => setActiveSection("projects")}
+              href="/#projects"
+              onClick={() => setIntersectingSection("projects")}
             >
               Projects
             </a>
             <a
               className="text-muted-foreground hover:text-foreground transition-colors"
-              href="#contact"
-              onClick={() => setActiveSection("contact")}
+              href="/#contact"
+              onClick={() => setIntersectingSection("contact")}
             >
               Contact
             </a>
