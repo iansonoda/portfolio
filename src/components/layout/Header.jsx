@@ -29,13 +29,22 @@ function MoonIcon() {
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
-  const [intersectingSection, setIntersectingSection] = useState("");
+  const [intersectingSection, setIntersectingSection] = useState(null);
   const { theme, toggle } = useTheme();
 
+  const isHome = location.pathname === "/";
+  const pathParts = location.pathname.split("/").filter(Boolean);
+
   // Derived current label
-  const activeSection = location.pathname !== "/"
-    ? location.pathname.split("/").filter(Boolean)[0] || ""
-    : intersectingSection || (location.hash.replace("#", "") || "hero");
+  let activeSection = "";
+  if (isHome) {
+    if (intersectingSection !== null) {
+      activeSection = intersectingSection;
+    } else {
+      const id = location.hash.replace("#", "") || "hero";
+      activeSection = NAV_SECTIONS.find((s) => s.id === id)?.label ?? "";
+    }
+  }
 
   // Scroll shadow
   useEffect(() => {
@@ -78,16 +87,38 @@ export default function Header() {
     >
       <div className="max-w-[1200px] mx-auto flex h-14 items-center justify-between px-6">
         {/* Logo / Home — dynamic section label + blinking cursor */}
-        <a
-          href="/"
-          className="flex items-center space-x-0 text-lg font-semibold tracking-tight text-foreground hover:opacity-80 transition-opacity"
-        >
-          <span className="text-muted-foreground">~/</span>
-          {activeSection && (
-            <span className="text-foreground font-semibold">{activeSection}</span>
+        <div className="flex items-center space-x-0 text-lg font-semibold tracking-tight">
+          <Link
+            to="/"
+            className="text-muted-foreground hover:text-foreground transition-colors"
+          >
+            ~/
+          </Link>
+          {isHome ? (
+            activeSection && (
+              <span className="text-foreground">{activeSection}</span>
+            )
+          ) : (
+            pathParts.map((part, index) => {
+              const to = `/${pathParts.slice(0, index + 1).join("/")}`;
+              const isLast = index === pathParts.length - 1;
+              return (
+                <span key={to} className="flex items-center">
+                  <Link
+                    to={to}
+                    className={`transition-colors ${
+                      isLast ? "text-foreground" : "text-muted-foreground hover:text-foreground"
+                    }`}
+                  >
+                    {part}
+                  </Link>
+                  {!isLast && <span className="text-muted-foreground">/</span>}
+                </span>
+              );
+            })
           )}
           <span className="cursor-blink inline-block w-[2px] h-5 bg-primary ml-0.5 rounded-sm" />
-        </a>
+        </div>
 
         {/* Navigation */}
         <div className="flex items-center gap-6">
