@@ -7,6 +7,7 @@ import ProjectsPage from "./pages/Projects";
 import ProjectDetail from "./pages/ProjectDetail";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
+import ScrollObserver from "./components/layout/ScrollObserver";
 import portfolioData from "./data/portfolio.json";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
     <ThemeProvider>
       <BrowserRouter>
         <div className="min-h-screen bg-background font-sans antialiased text-foreground flex flex-col">
+          <ScrollObserver />
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />

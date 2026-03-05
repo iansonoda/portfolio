@@ -128,13 +128,13 @@ export default function Header() {
             >
               About
             </Link>
-            <a
+            <Link
+              to="/#skills"
               className="text-muted-foreground hover:text-foreground transition-colors"
-              href="/#skills"
               onClick={() => setIntersectingSection("skills")}
             >
               Skills
-            </a>
+            </Link>
             <Link
               to="/projects"
               className="text-muted-foreground hover:text-foreground transition-colors"

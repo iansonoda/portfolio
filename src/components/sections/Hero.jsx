@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 export default function Hero({ personal }) {
   return (
@@ -27,10 +28,10 @@ export default function Hero({ personal }) {
         {/* Buttons */}
         <div className="flex items-center justify-center gap-4 pt-2">
           <Button size="lg" asChild>
-            <a href="#projects" className="group">
+            <Link to="/#projects" className="group">
               See My Work
               <span className="inline-block ml-1.5 transition-transform group-hover:translate-x-1">›</span>
-            </a>
+            </Link>
           </Button>
           {personal.resumeUrl && (
             <Button variant="outline" size="lg" asChild>

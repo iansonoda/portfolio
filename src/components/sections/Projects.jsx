@@ -6,7 +6,7 @@ export default function Projects({ projects }) {
   if (!projects || projects.length === 0) return null;
 
   return (
-    <section id="projects" className="w-full py-8 md:py-12">
+    <section id="projects" className="w-full py-8 md:py-12 scroll-mt-20">
       <div className="max-w-[1200px] mx-auto px-6 space-y-8">
         {/* Heading */}
         <div className="flex items-center justify-between border-b pb-4">
