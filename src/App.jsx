@@ -1,6 +1,6 @@
 import Header from "./components/layout/Header";
 import Hero from "./components/sections/Hero";
-import About from "./components/sections/About";
+import Skills from "./components/sections/Skills";
 import Projects from "./components/sections/Projects";
 import Footer from "./components/layout/Footer";
 
@@ -11,10 +11,10 @@ function App() {
 
   return (
     <div className="min-h-screen bg-background font-sans antialiased text-foreground">
-      <Header personal={personal} />
-      <main className="flex-1 w-full flex flex-col items-center">
+      <Header />
+      <main className="flex-1 w-full flex flex-col">
         <Hero personal={personal} />
-        <About personal={personal} skills={skills} />
+        <Skills skills={skills} />
         <Projects projects={projects} />
       </main>
       <Footer personal={personal} />

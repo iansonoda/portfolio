@@ -1,25 +1,29 @@
 {
   "personal": {
-    "name": "Ian Sonota McFarland",
-    "title": "Full Stack / Backend Engineer",
-    "bio": "Hi, I'm Ian. This is what I do.",
-    "location": "City, Country",
+    "name": "Ian Sonoda McFarland",
+    "title": "Software Engineer",
+    "bio": "Recent Graduate from McGill University. Currently building a freelance management application.",
+    "location": "Montreal, Quebec",
     "resumeUrl": "/resume.pdf",
     "contact": {
-      "email": "hello@example.com",
-      "github": "https://github.com",
-      "linkedin": "https://linkedin.com"
+      "email": "iansmcfarland@gmail.com",
+      "github": "https://github.com/iansonoda",
+      "linkedin": "https://linkedin.com/in/iansmcfarland"
     }
   },
   "skills": [
-    {
-      "category": "Frontend",
-      "technologies": ["React", "Tailwind CSS", "TypeScript"]
-    },
-    {
-      "category": "Backend",
-      "technologies": ["Node.js", "Python", "SQL"]
-    }
+    { "name": "Figma", "description": "Design Tool" },
+    { "name": "TypeScript", "description": "JavaScript but better" },
+    { "name": "React", "description": "JavaScript Library" },
+    { "name": "NextJS", "description": "React framework" },
+    { "name": "Tailwind", "description": "CSS framework" },
+    { "name": "Git", "description": "Version control" },
+    { "name": "Supabase", "description": "Backend tool" },
+    { "name": "NodeJS", "description": "Backend" },
+    { "name": "MongoDB", "description": "NoSQL database" },
+    { "name": "Prisma", "description": "ORM" },
+    { "name": "PostgreSQL", "description": "OR database system" },
+    { "name": "Vue", "description": "JavaScript framework" }
   ],
   "projects": [
     {
@@ -36,6 +40,14 @@
       "demoUrl": "https://example.com/demo2",
       "repoUrl": "https://github.com/example/beta",
       "imageUrl": "https://via.placeholder.com/600x400"
+    },
+    {
+      "title": "FreelanceHub",
+      "description": "A full-featured freelance management dashboard for tracking clients, projects, invoices, and time — all in one place. Built to replace a mess of spreadsheets with a clean, real-time SaaS experience.",
+      "techStack": ["Next.js", "TypeScript", "Supabase", "Prisma", "Tailwind CSS"],
+      "demoUrl": "https://example.com/freelancehub",
+      "repoUrl": "https://github.com/iansonoda/freelancehub",
+      "imageUrl": "/freelance-hub-preview.png"
     }
   ]
 }
