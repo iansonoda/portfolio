@@ -1,3 +1,4 @@
+import { ThemeProvider } from "./context/ThemeContext";
 import Header from "./components/layout/Header";
 import Hero from "./components/sections/Hero";
 import Skills from "./components/sections/Skills";
@@ -10,15 +11,17 @@ function App() {
   const { personal, skills, projects } = portfolioData;
 
   return (
-    <div className="min-h-screen bg-background font-sans antialiased text-foreground">
-      <Header />
-      <main className="flex-1 w-full flex flex-col">
-        <Hero personal={personal} />
-        <Skills skills={skills} />
-        <Projects projects={projects} />
-      </main>
-      <Footer personal={personal} />
-    </div>
+    <ThemeProvider>
+      <div className="min-h-screen bg-background font-sans antialiased text-foreground">
+        <Header />
+        <main className="flex-1 w-full flex flex-col">
+          <Hero personal={personal} />
+          <Skills skills={skills} />
+          <Projects projects={projects} />
+        </main>
+        <Footer personal={personal} />
+      </div>
+    </ThemeProvider>
   );
 }
 

@@ -94,14 +94,11 @@ export default function Projects({ projects }) {
   if (!projects || projects.length === 0) return null;
 
   return (
-    <section id="projects" className="w-full py-16 md:py-24">
+    <section id="projects" className="w-full py-8 md:py-12">
       <div className="max-w-[1200px] mx-auto px-6 space-y-12">
         {/* Heading */}
         <div className="space-y-3 text-center">
-          <h2 className="text-3xl font-bold tracking-tight">Selected Projects</h2>
-          <p className="text-muted-foreground max-w-[500px] mx-auto">
-            A showcase of my recent work and side projects.
-          </p>
+          <h2 className="text-3xl font-bold tracking-tight">Featured Projects</h2>
         </div>
 
         {/* Grid */}
