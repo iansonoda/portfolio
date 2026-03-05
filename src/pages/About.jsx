@@ -21,13 +21,20 @@ export default function About() {
         </div>
         
         <div className="flex flex-col flex-1 space-y-6 text-center md:text-left">
-          <p className="text-muted-foreground dark:text-zinc-200 text-lg md:text-xl leading-relaxed whitespace-pre-line">
-            {personal.bio}
+          <p className="text-muted-foreground dark:text-zinc-200 text-lg md:text-xl leading-relaxed">
+            <b>Hey!</b> I'm Ian <a href="/socials" className="text-primary hover:underline underline-offset-4 transition-colors">(@iansonoda)</a> - A recent graduate from McGill University, and based out of Montreal, Canada. I love making random and <a href="/projects" className="text-primary hover:underline underline-offset-4 transition-colors">cool projects</a> when I'm bored.
           </p>
           <p className="text-muted-foreground dark:text-zinc-200 text-lg md:text-xl leading-relaxed">
-            I love building things that solve real-world problems and creating interfaces that feel snappy, beautiful, and intuitive.
+            Some of my favorite projects include: 
           </p>
-          
+
+          <p className="text-muted-foreground dark:text-zinc-200 text-lg md:text-xl leading-relaxed">
+            Outside of coding, I love playing video games, reading fiction (especially fantasy), photography, and spending time with my family. I love making new friends and experiences new things! 
+            Feel free to reach out on 
+            <a href={personal.contact.instagram} target="_blank" rel="noreferrer" className="text-primary hover:underline underline-offset-4 transition-colors"> instagram </a> 
+            or shoot me an <a href={`mailto:${personal.contact.email}`} className="text-primary hover:underline underline-offset-4 transition-colors">email</a> if you'd like to chat.
+          </p>
+
           <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 pt-4">
             {personal.contact.github && (
               <a href={personal.contact.github} target="_blank" rel="noreferrer" className="flex items-center gap-2 text-sm font-medium text-foreground bg-muted/50 hover:bg-muted px-4 py-2.5 rounded-lg transition-colors border border-border/50 shadow-sm hover:shadow">

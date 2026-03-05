@@ -8,6 +8,7 @@ import ProjectDetail from "./pages/ProjectDetail";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 import ScrollObserver from "./components/layout/ScrollObserver";
+import TitleManager from "./components/layout/TitleManager";
 import portfolioData from "./data/portfolio.json";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <BrowserRouter>
         <div className="min-h-screen bg-background font-sans antialiased text-foreground flex flex-col">
           <ScrollObserver />
+          <TitleManager />
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
