@@ -1,39 +1,76 @@
-# Ian Sonoda McFarland - Portfolio
+# 🌐 Ian Sonoda McFarland - Personal Portfolio
 
-Personal portfolio website built with modern web technologies, showcasing my projects and skills.
+Welcome to my personal slice of the internet! This is a modern, responsive portfolio website designed to showcase my journey as a Software Engineer, my projects, and the technical skills I've picked up along the way.
 
-## 🚀 Tech Stack
+## ✨ Preview
 
-- **Frontend:** React, Tailwind CSS, Lucide React
-- **Build Tool:** Vite
-- **UI Components:** Radix UI / Shadcn
-- **Data:** Local JSON-driven content for easy updates
+<div align="center">
+  <img src="public/portfolio-hero.png" alt="Portfolio Hero Section" width="800">
+  <p><em>The clean, minimalistic hero section.</em></p>
+  <br>
+  <div style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: center;">
+    <img src="public/portfolio-about.png" alt="About Section" width="390">
+    <img src="public/portfolio-skills.png" alt="Skills Section" width="390">
+  </div>
+  <p><em>Comprehensive About and Skills sections.</em></p>
+  <br>
+  <img src="public/portfolio-projects.png" alt="Projects Grid" width="800">
+  <p><em>Dynamic project showcase with live data.</em></p>
+  <br>
+  <img src="public/portfolio-project-page.png" alt="Project Detail Page" width="800">
+  <p><em>Deep dives into every project with custom title styling.</em></p>
+  <br>
+  <img src="public/portfolio-socials.png" alt="Socials Section" width="800">
+  <p><em>Connect with me through various platforms.</em></p>
+</div>
 
-## 🛠️ Getting Started
+## 🚀 Why This Project?
+
+I built this portfolio to replace basic resumes with a living, breathing demonstration of my work. It's designed to be:
+
+- **Fast:** Lightning-fast loads powered by Vite and React.
+- **Sleek:** Minimalistic dark-mode aesthetic using Tailwind CSS.
+- **Maintainable:** All content is driven by a single JSON "Source of Truth," making updates a breeze.
+
+## 🛠️ Tech Stack
+
+- **Framework:** [React](https://reactjs.org/) (Hooks, Context)
+- **Navigation:** [React Router 7](https://reactrouter.com/)
+- **Bundler:** [Vite](https://vitejs.dev/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **UI Components:** [shadcn/ui](https://ui.shadcn.com/) (Radix UI)
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **Animation:** [tailwindcss-animate](https://github.com/jamiebuilds/tailwindcss-animate)
+- **Deployment:** Vercel (recommended)
+
+## 📦 Getting Started
 
 ### Prerequisites
 
-- Node.js (Latest LTS recommended)
+- [Node.js](https://nodejs.org/) (v18 or higher)
 - npm or yarn
 
-### Installation
+### Local Development
 
-1. Clone the repository:
+1. **Clone the repo:**
 
    ```bash
    git clone https://github.com/iansonoda/portfolio-website.git
+   cd portfolio-website
    ```
 
-2. Install dependencies:
+2. **Install dependencies:**
 
    ```bash
    npm install
    ```
 
-3. Start the development server:
+3. **Spin up the dev server:**
    ```bash
    npm run dev
    ```
+
+The app will be running at `http://localhost:5173`.
 
 ### Building for Production
 
@@ -41,12 +78,20 @@ Personal portfolio website built with modern web technologies, showcasing my pro
 npm run build
 ```
 
-## 📄 Source of Truth
+The optimized build will be in the `/dist` folder.
 
-The portfolio content is managed in `src/data/portfolio.json`. Update this file to change the text, skills, and projects displayed on the site.
+## 📄 Content Management
 
-## 📫 Contact
+The entire portfolio is data-driven. To update your info, bio, skills, or projects, simply edit:
+`src/data/portfolio.json`
 
-- **Email:** iansmcfarland@gmail.com
+## 📫 Let's Connect!
+
+- **Email:** [iansmcfarland@gmail.com](mailto:iansmcfarland@gmail.com)
 - **LinkedIn:** [linkedin.com/in/iansmcfarland](https://linkedin.com/in/iansmcfarland)
-- **GitHub:** [github.com/iansonoda](https://github.com/iansonoda)
+- **GitHub:** [@iansonoda](https://github.com/iansonoda)
+- **Instagram:** [@ian.mcfar](https://instagram.com/ian.mcfar)
+
+---
+
+Built with ❤️ while procrastinating at McGill. 🎓

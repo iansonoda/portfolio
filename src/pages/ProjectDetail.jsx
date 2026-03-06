@@ -112,10 +112,20 @@ export default function ProjectDetail() {
         {/* Content Section */}
         <div className="prose prose-zinc dark:prose-invert max-w-none">
           <h2 className="text-3xl font-bold tracking-tight text-primary mb-6">
-            {project.title}
+            Project Overview
           </h2>
-          <div className="text-muted-foreground leading-relaxed whitespace-pre-wrap">
-            {project.content || project.description}
+          <div className="text-muted-foreground leading-relaxed whitespace-pre-wrap space-y-4">
+            {(project.content || project.description).split('\n').map((line, i) => {
+              const isTitle = line.trim() === line.trim().toUpperCase() && line.trim().length > 3;
+              if (isTitle) {
+                return (
+                  <h3 key={i} className="text-xl font-bold text-foreground mt-8 mb-4 border-l-4 border-primary pl-4 py-1 bg-muted/30 rounded-r-lg">
+                    {line}
+                  </h3>
+                );
+              }
+              return <p key={i}>{line}</p>;
+            })}
           </div>
         </div>
       </article>

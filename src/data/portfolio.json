@@ -13,48 +13,49 @@
     }
   },
   "skills": [
-    { "name": "Figma", "description": "Design Tool" },
-    { "name": "TypeScript", "description": "JavaScript but better" },
-    { "name": "React", "description": "JavaScript Library" },
-    { "name": "NextJS", "description": "React framework" },
-    { "name": "Tailwind", "description": "CSS framework" },
-    { "name": "Git", "description": "Version control" },
-    { "name": "Supabase", "description": "Backend tool" },
-    { "name": "NodeJS", "description": "Backend" },
-    { "name": "MongoDB", "description": "NoSQL database" },
-    { "name": "Prisma", "description": "ORM" },
-    { "name": "PostgreSQL", "description": "OR database system" },
-    { "name": "Vue", "description": "JavaScript framework" }
+    { "name": "Java", "description": "Backend Language" },
+    { "name": "Spring Boot", "description": "Enterprise Framework" },
+    { "name": "React", "description": "Frontend Library" },
+    { "name": "TypeScript", "description": "Type-Safe JS" },
+    { "name": "Python", "description": "Data & ML" },
+    { "name": "SQL", "description": "Database Querying" },
+    { "name": "PostgreSQL", "description": "Relational Database" },
+    { "name": "AWS", "description": "Cloud Infrastructure" },
+    { "name": "Docker", "description": "Containerization" },
+    { "name": "Git", "description": "Version Control" },
+    { "name": "Tailwind", "description": "CSS Framework" },
+    { "name": "Figma", "description": "Design Tool" }
   ],
   "projects": [
     {
-      "title": "Project Alpha",
-      "description": "A complex application that does amazing things.",
-      "techStack": ["React", "Node.js", "MongoDB"],
-      "demoUrl": "https://example.com/demo",
-      "repoUrl": "https://github.com/example/alpha",
-      "date": "October 13, 2025",
-      "content": "Welcome to Project Alpha. This is where I go into deep detail about the project in a blog style format.\n\nIt was built using the best tools available at the time and solved a major set of problems related to scale and real-time processing."
+      "title": "Resumind",
+      "description": "Your AI-powered secret weapon for the job hunt. 🚀 Scans resumes against job descriptions to find skill gaps and boost your ATS score.",
+      "techStack": ["React Router 7", "Tailwind CSS v4", "Puter.js", "Zustand", "pdfjs-dist", "tw-animate-css", "Lucide React"],
+      "demoUrl": "https://ai-resume-app.example.com",
+      "repoUrl": "https://github.com/iansonoda/ai-resume-app",
+      "imageUrl": "/resumind-preview.png",
+      "date": "March 06, 2026",
+      "content": "THE STRUGGLE IS REAL\n\nApplying for jobs is a full-time job in itself, and it sucks. I wanted to build something that actually helps us bypass those annoying automated filters (ATS). No more screaming into the void!\n\nTHE FIX\n\nResumind takes your PDF, matches it with the job you want, and gives you a breakdown that matches the industry standards. It uses Puter.js and some crazy AI magic to scan your resume and tells you exactly what's missing.\n\nKEY FEATURES\n\n• Intelligent AI Analysis: Deep-scans your resume against specific job descriptions for professional-grade feedback.\n• ATS Scoring Engine: Get a precise \"Applicant Tracking System\" score and learn exactly how to bypass automated filters.\n• Strategic Keyword Extraction: Finds 8-15 critical keywords from any job description and checks if they're in your resume.\n• Targeted Feedback: Improves your tone, content, and structure for maximum impact.\n\nI built this because let's be real, reading job descriptions is soul-crushing. This app does the heavy lifting so you can focus on being the professional you (hypothetically) are. 💼"
     },
     {
-      "title": "Project Beta",
-      "description": "Another great project, showcasing my backend skills.",
-      "techStack": ["Python", "Django", "PostgreSQL"],
-      "demoUrl": "https://example.com/demo2",
-      "repoUrl": "https://github.com/example/beta",
-      "imageUrl": "https://via.placeholder.com/600x400",
-      "date": "March 01, 2025",
-      "content": "Welcome to Project Beta. This is where I go into deep detail about the project in a blog style format.\n\nWeighing the soul of incoming HTTP requests using proof-of-work to stop AI crawlers and other malicious bots."
+      "title": "Movie Search App",
+      "description": "Sleek, dark-themed movie discovery app. Tracks live search trends using Appwrite while you hunt for your next binge-watch. 🎬",
+      "techStack": ["React", "Vite", "Tailwind CSS", "Appwrite", "TMDB API", "react-use", "Hooks", "Context"],
+      "demoUrl": "https://movie-app.example.com",
+      "repoUrl": "https://github.com/iansonoda/React-Movie-App",
+      "imageUrl": "/movie-app-preview.png",
+      "date": "February 20, 2026",
+      "content": "WHY I BUILT IT\n\nMovie night just got an upgrade! I wanted to play around with Appwrite and see how I could track live search trends without making the app feel slow. Plus, I needed a way to find movies while procrastinating in class. 🍿\n\nTHE TECH\n\n• React + Vite: For that lightning-fast development experience.\n• Appwrite: Handles the backend and tracks the most searched terms in real-time.\n• TMDB API: The source of truth for all things cinema.\n\nCOOLEST PART\n\nThe debounced search! No more spamming the API every time you type a letter. It's smooth, optimized, and optimized for mobile, tablet, and desktop screens. It honestly just looks really good with the dark-themed visuals. 📱"
     },
     {
-      "title": "FreelanceHub",
-      "description": "A full-featured freelance management dashboard for tracking clients, projects, invoices, and time — all in one place.",
-      "techStack": ["Next.js", "TypeScript", "Supabase", "Prisma", "Tailwind CSS"],
-      "demoUrl": "https://example.com/freelancehub",
-      "repoUrl": "https://github.com/iansonoda/freelancehub",
-      "imageUrl": "/freelance-hub-preview.png",
-      "date": "August 16, 2024",
-      "content": "Welcome to the most meta project in my portfolio - the very website you're reading this on! Nyx is my personal portfolio and blog built with performance and simplicity in mind.\n\nA full-featured freelance management dashboard for tracking clients, projects, invoices, and time — all in one place. Built to replace a mess of spreadsheets with a clean, real-time SaaS experience."
+      "title": "Portfolio",
+      "description": "Wait, you're literally looking at it right now! 🤯 My personal showcase built with React and Tailwind to hold all my random projects.",
+      "techStack": ["React", "Tailwind CSS", "shadcn/ui", "Vite", "react-router-dom", "Lucide React", "radix-ui"],
+      "demoUrl": "https://iansonoda.com",
+      "repoUrl": "https://github.com/iansonoda/portfolio-website",
+      "imageUrl": "/portfolio-hero.png",
+      "date": "March 06, 2026",
+      "content": "META MOMENT\n\nWelcome to the most meta project in my portfolio - the very website you're reading this on! This is my personal portfolio, built to showcase everything I've been working on while pretending to study at McGill. 🎓\n\nTHE VIBE\n\nI wanted something clean, minimalistic, and snappy. Built with React and Tailwind to keep things lightweight, with custom animations to make it feel alive. \n\nFEATURES\n\n• Custom Animations: Smooth transitions and scroll observers.\n• Dark Mode Aesthetic: Sleek visuals for that premium feel.\n• Responsive Layout: Looks great on your phone or your ultra-wide monitor.\n• Dynamic Data: Everything is driven by a central JSON source of truth.\n\nIt's basically a place for all my random projects and a way to prove I actually know how to code. Check out the other projects while you're here! ✅"
     }
   ]
 }

@@ -7,15 +7,23 @@ const TECH_COLORS = {
   "Next.js":     "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400",
   "NextJS":      "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400",
   "Vue":         "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400",
+  "React Router 7": "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400",
   "Tailwind CSS":"bg-cyan-100 text-cyan-700 dark:bg-cyan-900/30 dark:text-cyan-400",
   "Tailwind":    "bg-cyan-100 text-cyan-700 dark:bg-cyan-900/30 dark:text-cyan-400",
+  "Tailwind CSS v4": "bg-cyan-100 text-cyan-700 dark:bg-cyan-900/30 dark:text-cyan-400",
   "HTML":        "bg-orange-100 text-orange-600 dark:bg-orange-900/30 dark:text-orange-400",
   "CSS":         "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400",
+  "radix-ui":    "bg-violet-100 text-violet-700 dark:bg-violet-900/30 dark:text-violet-400",
+  "Radix UI":    "bg-violet-100 text-violet-700 dark:bg-violet-900/30 dark:text-violet-400",
+  "shadcn/ui":   "bg-zinc-100 text-zinc-700 dark:bg-zinc-900/30 dark:text-zinc-400",
+  "Vite":        "bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-400",
 
   // Languages — violet
   "TypeScript":  "bg-violet-100 text-violet-700 dark:bg-violet-900/30 dark:text-violet-400",
   "JavaScript":  "bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-400",
-  "Python":      "bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-400",
+  "Python":      "bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400",
+  "Java":        "bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400",
+  "SQL":         "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400",
 
   // Backend — emerald
   "Node.js":     "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400",
@@ -23,24 +31,38 @@ const TECH_COLORS = {
   "Express":     "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400",
   "Django":      "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400",
   "FastAPI":     "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400",
+  "Spring Boot": "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400",
+  "JUnit":       "bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400",
 
-  // Database — amber
+  // Database / Cloud — amber/sky
   "MongoDB":     "bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400",
   "PostgreSQL":  "bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400",
   "MySQL":       "bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400",
-  "Redis":       "bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400",
-  "SQLite":      "bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400",
-
-  // ORM / BaaS — orange
-  "Prisma":      "bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-400",
-  "Supabase":    "bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-400",
+  "Appwrite":    "bg-pink-100 text-pink-700 dark:bg-pink-900/30 dark:text-pink-400",
+  "Supabase":    "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400",
   "Firebase":    "bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-400",
+  "AWS":         "bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-400",
+  "Puter.js":    "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400",
 
-  // APIs / Infra — rose
-  "REST":        "bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-400",
-  "GraphQL":     "bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-400",
-  "Docker":      "bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-400",
-  "AWS":         "bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-400",
+  // Tools — zinc
+  "Git":         "bg-zinc-100 text-zinc-700 dark:bg-zinc-800 dark:text-zinc-400",
+  "Docker":      "bg-sky-100 text-sky-700 dark:bg-sky-900/30 dark:text-sky-400",
+  "Zustand":     "bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-400",
+  "TMDB API":    "bg-sky-100 text-sky-700 dark:bg-sky-900/30 dark:text-sky-400",
+
+  // ML / Data Science — indigo
+  "PyTorch":     "bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-400",
+  "NumPy":       "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400",
+  "Matplotlib":  "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400",
+  "Pandas":      "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400",
+
+  "pdfjs-dist":   "bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400",
+  "react-use":    "bg-sky-100 text-sky-700 dark:bg-sky-900/30 dark:text-sky-400",
+  "tw-animate-css": "bg-pink-100 text-pink-700 dark:bg-pink-900/30 dark:text-pink-400",
+  "Hooks":        "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400",
+  "Context":      "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400",
+  "react-router-dom": "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400",
+  "Lucide React": "bg-zinc-100 text-zinc-700 dark:bg-zinc-900/30 dark:text-zinc-400",
 
   // Default — zinc
   default:       "bg-zinc-100 text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400",
