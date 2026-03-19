@@ -2,6 +2,10 @@
 
 Welcome to my personal slice of the internet! This is a modern, responsive portfolio website designed to showcase my journey as a Software Engineer, my projects, and the technical skills I've picked up along the way.
 
+## Live Site
+
+The portfolio is deployed at [iansonoda.vercel.app](https://iansonoda.vercel.app).
+
 ## ✨ Preview
 
 <div align="center">
@@ -41,44 +45,7 @@ I built this portfolio to replace basic resumes with a living, breathing demonst
 - **UI Components:** [shadcn/ui](https://ui.shadcn.com/) (Radix UI)
 - **Icons:** [Lucide React](https://lucide.dev/)
 - **Animation:** [tailwindcss-animate](https://github.com/jamiebuilds/tailwindcss-animate)
-- **Deployment:** Vercel (recommended)
-
-## 📦 Getting Started
-
-### Prerequisites
-
-- [Node.js](https://nodejs.org/) (v18 or higher)
-- npm or yarn
-
-### Local Development
-
-1. **Clone the repo:**
-
-   ```bash
-   git clone https://github.com/iansonoda/portfolio-website.git
-   cd portfolio-website
-   ```
-
-2. **Install dependencies:**
-
-   ```bash
-   npm install
-   ```
-
-3. **Spin up the dev server:**
-   ```bash
-   npm run dev
-   ```
-
-The app will be running at `http://localhost:5173`.
-
-### Building for Production
-
-```bash
-npm run build
-```
-
-The optimized build will be in the `/dist` folder.
+- **Deployment:** [Vercel](https://vercel.com/) at [iansonoda.vercel.app](https://iansonoda.vercel.app)
 
 ## 📄 Content Management
 
