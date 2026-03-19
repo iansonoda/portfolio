@@ -17,6 +17,7 @@ const TECH_COLORS = {
   "Radix UI":    "bg-violet-100 text-violet-700 dark:bg-violet-900/30 dark:text-violet-400",
   "shadcn/ui":   "bg-zinc-100 text-zinc-700 dark:bg-zinc-900/30 dark:text-zinc-400",
   "Vite":        "bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-400",
+  "Electron":    "bg-slate-100 text-slate-700 dark:bg-slate-900/30 dark:text-slate-300",
 
   // Languages — violet
   "TypeScript":  "bg-violet-100 text-violet-700 dark:bg-violet-900/30 dark:text-violet-400",
@@ -40,9 +41,12 @@ const TECH_COLORS = {
   "MySQL":       "bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400",
   "Appwrite":    "bg-pink-100 text-pink-700 dark:bg-pink-900/30 dark:text-pink-400",
   "Supabase":    "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400",
+  "Prisma":      "bg-slate-100 text-slate-700 dark:bg-slate-900/30 dark:text-slate-300",
   "Firebase":    "bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-400",
   "AWS":         "bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-400",
   "Puter.js":    "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400",
+  "OpenRouter":  "bg-fuchsia-100 text-fuchsia-700 dark:bg-fuchsia-900/30 dark:text-fuchsia-400",
+  "Hugging Face":"bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-400",
 
   // Tools — zinc
   "Git":         "bg-zinc-100 text-zinc-700 dark:bg-zinc-800 dark:text-zinc-400",
@@ -52,6 +56,8 @@ const TECH_COLORS = {
 
   // ML / Data Science — indigo
   "PyTorch":     "bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-400",
+  "Whisper Large v3": "bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-400",
+  "Qwen 2.5":    "bg-pink-100 text-pink-700 dark:bg-pink-900/30 dark:text-pink-400",
   "NumPy":       "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400",
   "Matplotlib":  "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400",
   "Pandas":      "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400",

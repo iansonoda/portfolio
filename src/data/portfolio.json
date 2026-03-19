@@ -56,6 +56,24 @@
       "imageUrl": "/portfolio-hero.png",
       "date": "March 06, 2026",
       "content": "META MOMENT\n\nWelcome to the most meta project in my portfolio - the very website you're reading this on! This is my personal portfolio, built to showcase everything I've been working on while pretending to study at McGill. 🎓\n\nTHE VIBE\n\nI wanted something clean, minimalistic, and snappy. Built with React and Tailwind to keep things lightweight, with custom animations to make it feel alive. \n\nFEATURES\n\n• Custom Animations: Smooth transitions and scroll observers.\n• Dark Mode Aesthetic: Sleek visuals for that premium feel.\n• Responsive Layout: Looks great on your phone or your ultra-wide monitor.\n• Dynamic Data: Everything is driven by a central JSON source of truth.\n\nIt's basically a place for all my random projects and a way to prove I actually know how to code. Check out the other projects while you're here! ✅"
+    },
+    {
+      "title": "Vocalize AI",
+      "description": "Mac-first AI dictation tool that records with a global hotkey, cleans up filler words, and drops polished text straight into whatever app you're using. 🎙️",
+      "techStack": ["Electron", "Tailwind CSS", "Python", "Whisper Large v3", "Hugging Face", "Qwen 2.5", "PostgreSQL", "Supabase"],
+      "repoUrl": "https://github.com/iansonoda/vocalize-ai",
+      "imageUrl": "/vocalize-ai-preview.png",
+      "date": "March 19, 2026",
+      "content": "WHY I BUILT IT\n\nTyping every thought is slow, and most voice tools still feel clunky. I wanted a desktop app that could live in the background, fire instantly from a hotkey, and turn messy speech into clean text without breaking flow.\n\nHOW IT WORKS\n\nVocalize AI listens for a global macOS shortcut, records audio, sends it through Whisper for transcription, then runs a second AI cleanup pass to remove filler words and format the result. Once it's ready, it pastes the final text directly into the active app so the whole workflow feels native.\n\nKEY FEATURES\n\n• Global Hotkey Recording: Start and stop dictation from anywhere with the Right Option key.\n• AI Transcription + Cleanup: Converts speech to text, then removes stutters, filler words, and awkward phrasing.\n• Context-Aware Formatting: Understands cues like bullet points, new lines, and punctuation commands.\n• Direct App Insertion: Pastes cleaned text into docs, chats, browsers, and other active inputs.\n• Local History Dashboard: Lets you review, copy, and manage previous dictations.\n\nThis project was a fun mix of desktop UX, Python audio tooling, and AI orchestration. It feels way more like a real productivity product than a one-off demo."
+    },
+    {
+      "title": "GymAI",
+      "description": "Full-stack workout planner that turns your goals, experience, schedule, and equipment into personalized AI-generated training plans. 💪",
+      "techStack": ["React", "Vite", "TypeScript", "Tailwind CSS", "Node.js", "Express", "PostgreSQL", "Prisma", "OpenRouter"],
+      "repoUrl": "https://github.com/iansonoda/gym-ai-planner",
+      "imageUrl": "/gym-ai-preview.png",
+      "date": "March 19, 2026",
+      "content": "WHY I BUILT IT\n\nI wanted a project that showed full product thinking, not just isolated frontend work. GymAI gave me a way to combine onboarding, authentication, database design, AI generation, and a polished interface into one app that solves a real planning problem.\n\nWHAT IT DOES\n\nGymAI collects training goals, experience level, schedule, preferred split, and available equipment, then generates a structured workout plan around those constraints. Users can create accounts, save their profile data, revisit old plans, and regenerate updated versions over time.\n\nKEY FEATURES\n\n• Personalized Onboarding: Captures the details that actually matter for a usable workout plan.\n• AI Plan Generation: Builds routines with sets, reps, rest times, focus areas, and progression guidance.\n• Persistent User Data: Stores profiles and plan history so training can evolve instead of resetting every session.\n• Authenticated Full-Stack Flow: Includes sign up, sign in, account management, and protected plan views.\n\nIt was a strong end-to-end build for proving I can ship more than isolated UI work: database-backed product flows, backend APIs, and AI output all working together in one place."
     }
   ]
 }
