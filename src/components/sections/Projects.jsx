@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import ProjectCard from "@/components/ui/ProjectCard";
 import { Star } from "lucide-react";
+import { slugifyProjectTitle } from "@/lib/portfolio";
 
 export default function Projects({ projects }) {
   if (!projects || projects.length === 0) return null;
@@ -27,8 +28,8 @@ export default function Projects({ projects }) {
 
         {/* Grid */}
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {projects.map((project, idx) => (
-            <ProjectCard key={idx} project={project} />
+          {projects.map((project) => (
+            <ProjectCard key={slugifyProjectTitle(project.title)} project={project} />
           ))}
         </div>
       </div>

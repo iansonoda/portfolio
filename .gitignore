@@ -28,3 +28,4 @@ dist-ssr/
 # Project specific ignores
 *.md
 !README.md
+.vscode

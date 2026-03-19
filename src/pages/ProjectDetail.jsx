@@ -2,14 +2,15 @@ import { useParams, Link, Navigate } from "react-router-dom";
 import { ArrowLeft, Calendar, Github, ExternalLink } from "lucide-react";
 import { TechBadge } from "@/components/ui/ProjectCard";
 import portfolioData from "@/data/portfolio.json";
+import { findProjectBySlug, isPublicExternalUrl } from "@/lib/portfolio";
 
 export default function ProjectDetail() {
   const { slug } = useParams();
   
   // Find project
-  const project = portfolioData.projects.find(
-    (p) => p.title.toLowerCase().replace(/[^a-z0-9]+/g, "-") === slug
-  );
+  const project = findProjectBySlug(portfolioData.projects, slug);
+  const hasRepoUrl = isPublicExternalUrl(project?.repoUrl);
+  const hasDemoUrl = isPublicExternalUrl(project?.demoUrl);
 
   if (!project) {
     return <Navigate to="/projects" replace />;
@@ -73,22 +74,24 @@ export default function ProjectDetail() {
           )}
           
           <div className="flex items-center gap-4">
-            {project.repoUrl && (
+            {hasRepoUrl && (
               <a
                 href={project.repoUrl}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
+                aria-label={`Open ${project.title} GitHub repository`}
                 className="hover:text-primary transition-colors flex items-center gap-1.5"
                 title="GitHub Repository"
               >
                 <Github className="w-4 h-4" />
               </a>
             )}
-            {project.demoUrl && (
+            {hasDemoUrl && (
               <a
                 href={project.demoUrl}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
+                aria-label={`Open ${project.title} live demo`}
                 className="hover:text-primary transition-colors flex items-center gap-1.5"
                 title="Live Demo"
               >

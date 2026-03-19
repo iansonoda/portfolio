@@ -1,6 +1,7 @@
 import { Folder } from "lucide-react";
 import ProjectCard from "@/components/ui/ProjectCard";
 import portfolioData from "@/data/portfolio.json";
+import { slugifyProjectTitle } from "@/lib/portfolio";
 
 export default function ProjectsPage() {
   const { projects } = portfolioData;
@@ -17,8 +18,8 @@ export default function ProjectsPage() {
       </div>
 
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {projects.map((project, idx) => (
-          <ProjectCard key={idx} project={project} />
+        {projects.map((project) => (
+          <ProjectCard key={slugifyProjectTitle(project.title)} project={project} />
         ))}
       </div>
     </main>

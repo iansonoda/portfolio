@@ -1,5 +1,6 @@
 import { useRef, useLayoutEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
+import { slugifyProjectTitle } from "@/lib/portfolio";
 
 const TECH_COLORS = {
   // Frontend — blue
@@ -119,7 +120,7 @@ function TechBadgeRow({ techStack }) {
 }
 
 export default function ProjectCard({ project }) {
-  const slug = project.title.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+  const slug = slugifyProjectTitle(project.title);
   
   return (
     <Link

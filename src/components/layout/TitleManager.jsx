@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import portfolioData from "@/data/portfolio.json";
+import { findProjectBySlug } from "@/lib/portfolio";
 
 const TitleManager = () => {
   const { pathname } = useLocation();
@@ -19,9 +20,7 @@ const TitleManager = () => {
       title = `Projects | ${name}`;
     } else if (pathname.startsWith("/projects/")) {
       const slug = pathname.split("/").pop();
-      const project = portfolioData.projects.find(
-        (p) => p.title.toLowerCase().replace(/[^a-z0-9]+/g, "-") === slug
-      );
+      const project = findProjectBySlug(portfolioData.projects, slug);
       if (project) {
         title = `${project.title} | ${name}`;
       } else {

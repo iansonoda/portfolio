@@ -135,9 +135,9 @@ export default function Skills({ skills }) {
           My Technologies
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
-          {skills.map((skill, idx) => (
+          {skills.map((skill) => (
             <div
-              key={idx}
+              key={skill.name}
               className="group flex items-center gap-4 rounded-xl bg-[#1a1a1a] border border-[#2a2a2a] px-5 py-4 transition-all duration-300 hover:border-[#3a3a3a] hover:bg-[#1f1f1f] hover:shadow-lg hover:shadow-black/20"
             >
               <div className="flex-shrink-0 opacity-80 group-hover:opacity-100 transition-opacity">

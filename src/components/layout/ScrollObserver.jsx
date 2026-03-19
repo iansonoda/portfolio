@@ -5,9 +5,11 @@ export default function ScrollObserver() {
   const { pathname, hash } = useLocation();
 
   useEffect(() => {
+    let timeoutId;
+
     if (hash) {
       // Small timeout to ensure DOM has painted the new route before scrolling
-      setTimeout(() => {
+      timeoutId = window.setTimeout(() => {
         const id = hash.replace("#", "");
         const element = document.getElementById(id);
         if (element) {
@@ -17,6 +19,12 @@ export default function ScrollObserver() {
     } else {
       window.scrollTo(0, 0);
     }
+
+    return () => {
+      if (timeoutId) {
+        window.clearTimeout(timeoutId);
+      }
+    };
   }, [pathname, hash]);
 
   return null;
